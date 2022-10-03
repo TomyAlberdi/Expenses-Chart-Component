@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'DM Sans', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: hsl(27, 66%, 92%);
+    main {
+        display: flex;
+        flex-direction: column;
+        gap: 5vw;
+        padding: 0 5vw;
+        .balance {
+            background-color: hsl(10, 79%, 65%);
+            color: hsl(33, 100%, 98%);
+            padding: 8%;
+            border-radius: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            div {
+                &:nth-child(1) {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 8px;
+                    h3 {
+                        font-weight: lighter;
+                    }
+                }
+                &:nth-child(2) {
+                    position: relative;
+                    div {
+                        border-radius: 50%;
+                        height: 50px;
+                        width: 50px;
+                        position: absolute;
+                        top: -25px;
+                        &.circ1 {
+                            border: 2px solid white;
+                            z-index: 2;
+                            right: 8vw;
+                        }
+                        &.circ2 {
+                            background-color: hsl(25, 47%, 15%);
+                            z-index: 1;
+                            right: 0;
+                        }
+                    }
+                }
+            }
+        }
+        .spending {
+            background-color: hsl(33, 100%, 98%);
+            padding: 8%;
+            border-radius: 15px;
+            .week {
+                border-bottom: 3px solid hsl(27, 66%, 92%); 
+                padding: 0 0 3vh 0;
+                h2 {
+                    color: hsl(25, 47%, 15%);
+                }
+                .graph {
+                    height: 35vh;
+                    display: grid;
+                    grid-template-columns: repeat(7, 1fr);
+                    grid-template-rows: repeat(8, 1fr);
+                    grid-column-gap: 10px;
+                    grid-row-gap: 0px;
+                    .dy {
+                        text-align: center;
+                        h3 {
+                            color: hsl(28, 10%, 53%);
+                            font-size: 0.8rem;
+                        }
+                        padding: 2vh 0;
+                    }
+                    .cl {
+                        border-radius: 5px;
+                        background-color: hsl(10, 79%, 65%);
+                    }
+                    .div1 { grid-area: 8 / 1 / 9 / 2; }
+                    .div2 { grid-area: 8 / 2 / 9 / 3; }
+                    .div3 { grid-area: 8 / 3 / 9 / 4; }
+                    .div4 { grid-area: 8 / 4 / 9 / 5; }
+                    .div5 { grid-area: 8 / 5 / 9 / 6; }
+                    .div6 { grid-area: 8 / 6 / 9 / 7; }
+                    .div7 { grid-area: 8 / 7 / 9 / 8; }
+                    .div8 { grid-area: 6 / 1 / 8 / 2; }
+                    .div9 { grid-area: 4 / 2 / 8 / 3; }
+                    .div10 { grid-area: 2 / 3 / 8 / 4; }
+                    .div11 { grid-area: 4 / 4 / 8 / 5; }
+                    .div12 { grid-area: 5 / 5 / 8 / 6; }
+                    .div13 { grid-area: 3 / 6 / 8 / 7; }
+                    .div14 { grid-area: 5 / 7 / 8 / 8; } 
+                }
+            }
+            .data {
+                padding: 3vh 0 0 0;
+                display: flex;
+                justify-content: space-between;
+                h3 {
+                    font-size: 0.92rem;
+                    color: hsl(28, 10%, 53%);
+                }
+                h2 {
+                    font-size: 2rem;
+                    color: hsl(25, 47%, 15%);
+                }
+                div:nth-child(2) {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-end;
+                    justify-content: flex-end;
+                    h2 {
+                        color: hsl(25, 47%, 15%); 
+                        font-size: 1.1rem;
+                    }
+                }
+            }
+        }
+    }
+}

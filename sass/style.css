@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "DM Sans", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  background-color: hsl(27deg, 66%, 92%);
+}
+body main {
+  display: flex;
+  flex-direction: column;
+  gap: 5vw;
+  padding: 0 5vw;
+}
+body main .balance {
+  background-color: hsl(10deg, 79%, 65%);
+  color: hsl(33deg, 100%, 98%);
+  padding: 8%;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body main .balance div:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+body main .balance div:nth-child(1) h3 {
+  font-weight: lighter;
+}
+body main .balance div:nth-child(2) {
+  position: relative;
+}
+body main .balance div:nth-child(2) div {
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: -25px;
+}
+body main .balance div:nth-child(2) div.circ1 {
+  border: 2px solid white;
+  z-index: 2;
+  right: 8vw;
+}
+body main .balance div:nth-child(2) div.circ2 {
+  background-color: hsl(25deg, 47%, 15%);
+  z-index: 1;
+  right: 0;
+}
+body main .spending {
+  background-color: hsl(33deg, 100%, 98%);
+  padding: 8%;
+  border-radius: 15px;
+}
+body main .spending .week {
+  border-bottom: 3px solid hsl(27deg, 66%, 92%);
+  padding: 0 0 3vh 0;
+}
+body main .spending .week h2 {
+  color: hsl(25deg, 47%, 15%);
+}
+body main .spending .week .graph {
+  height: 35vh;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 0px;
+}
+body main .spending .week .graph .dy {
+  text-align: center;
+  padding: 2vh 0;
+}
+body main .spending .week .graph .dy h3 {
+  color: hsl(28deg, 10%, 53%);
+  font-size: 0.8rem;
+}
+body main .spending .week .graph .cl {
+  border-radius: 5px;
+  background-color: hsl(10deg, 79%, 65%);
+}
+body main .spending .week .graph .div1 {
+  grid-area: 8/1/9/2;
+}
+body main .spending .week .graph .div2 {
+  grid-area: 8/2/9/3;
+}
+body main .spending .week .graph .div3 {
+  grid-area: 8/3/9/4;
+}
+body main .spending .week .graph .div4 {
+  grid-area: 8/4/9/5;
+}
+body main .spending .week .graph .div5 {
+  grid-area: 8/5/9/6;
+}
+body main .spending .week .graph .div6 {
+  grid-area: 8/6/9/7;
+}
+body main .spending .week .graph .div7 {
+  grid-area: 8/7/9/8;
+}
+body main .spending .week .graph .div8 {
+  grid-area: 6/1/8/2;
+}
+body main .spending .week .graph .div9 {
+  grid-area: 4/2/8/3;
+}
+body main .spending .week .graph .div10 {
+  grid-area: 2/3/8/4;
+}
+body main .spending .week .graph .div11 {
+  grid-area: 4/4/8/5;
+}
+body main .spending .week .graph .div12 {
+  grid-area: 5/5/8/6;
+}
+body main .spending .week .graph .div13 {
+  grid-area: 3/6/8/7;
+}
+body main .spending .week .graph .div14 {
+  grid-area: 5/7/8/8;
+}
+body main .spending .data {
+  padding: 3vh 0 0 0;
+  display: flex;
+  justify-content: space-between;
+}
+body main .spending .data h3 {
+  font-size: 0.92rem;
+  color: hsl(28deg, 10%, 53%);
+}
+body main .spending .data h2 {
+  font-size: 2rem;
+  color: hsl(25deg, 47%, 15%);
+}
+body main .spending .data div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+body main .spending .data div:nth-child(2) h2 {
+  color: hsl(25deg, 47%, 15%);
+  font-size: 1.1rem;
+}/*# sourceMappingURL=style.css.map */

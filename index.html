@@ -7,37 +7,54 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Expenses chart component</title>
+  <link rel="stylesheet" href="./sass/style.css">
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
 
-  My balance
-  $921.48
-
-  Spending - Last 7 days
-
-  mon
-  tue
-  wed
-  thu
-  fri
-  sat
-  sun
-
-  Total this month
-  $478.33
-
-  +2.4%
-  from last month
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    <main role="main">
+        <div class="balance">
+            <div>
+                <h3>My balance</h3>
+                <h2>$921.48</h2>
+            </div>
+            <div>
+                <div class="circ1"></div>
+                <div class="circ2"></div>
+            </div>
+        </div>
+        <div class="spending">
+            <div class="week">
+                <h2>Spending - Last 7 days</h2>
+                <div class="graph">
+                    <div class="div1 dy"><h3>mon</h3></div>
+                    <div class="div2 dy"><h3>tue</h3></div>
+                    <div class="div3 dy"><h3>wed</h3></div>
+                    <div class="div4 dy"><h3>thu</h3></div>
+                    <div class="div5 dy"><h3>fri</h3></div>
+                    <div class="div6 dy"><h3>sat</h3></div>
+                    <div class="div7 dy"><h3>sun</h3></div>
+                    <div class="div8 cl"></div>
+                    <div class="div9 cl"></div>
+                    <div class="div10 cl"></div>
+                    <div class="div11 cl"></div>
+                    <div class="div12 cl"></div>
+                    <div class="div13 cl"></div>
+                    <div class="div14 cl"></div>
+                </div>
+            </div>
+            <div class="data">
+                <div>
+                    <h3>Total this month</h3>
+                    <h2>$478.33</h2>
+                </div>
+                <div>
+                    <h2>+2.4%</h2>
+                    <h3>from last month</h3>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
 </body>
 </html>
