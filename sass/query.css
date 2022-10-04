@@ -24,7 +24,7 @@
     grid-column-gap: 20px;
   }
   body main .spending .week .graph div {
-    width: 57px;
+    width: 46px;
   }
   body main .spending .week .graph div.day {
     width: unset;
