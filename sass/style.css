@@ -76,6 +76,10 @@ body main .spending .week .graph {
   grid-column-gap: 10px;
   grid-row-gap: 0px;
 }
+body main .spending .week .graph div:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
 body main .spending .week .graph .dy {
   text-align: center;
   padding: 2vh 0;
@@ -117,6 +121,7 @@ body main .spending .week .graph .div9 {
 }
 body main .spending .week .graph .div10 {
   grid-area: 2/3/8/4;
+  background-color: hsl(186deg, 34%, 60%);
 }
 body main .spending .week .graph .div11 {
   grid-area: 4/4/8/5;

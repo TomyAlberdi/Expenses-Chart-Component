@@ -74,6 +74,10 @@ body {
                     grid-template-rows: repeat(8, 1fr);
                     grid-column-gap: 10px;
                     grid-row-gap: 0px;
+                    div:hover {
+                        cursor: pointer;
+                        opacity: 0.7;
+                    }
                     .dy {
                         text-align: center;
                         h3 {
@@ -95,7 +99,10 @@ body {
                     .div7 { grid-area: 8 / 7 / 9 / 8; }
                     .div8 { grid-area: 6 / 1 / 8 / 2; }
                     .div9 { grid-area: 4 / 2 / 8 / 3; }
-                    .div10 { grid-area: 2 / 3 / 8 / 4; }
+                    .div10 { 
+                        grid-area: 2 / 3 / 8 / 4; 
+                        background-color: hsl(186, 34%, 60%);
+                    }
                     .div11 { grid-area: 4 / 4 / 8 / 5; }
                     .div12 { grid-area: 5 / 5 / 8 / 6; }
                     .div13 { grid-area: 3 / 6 / 8 / 7; }
