@@ -27,6 +27,14 @@
                     border-bottom: 5px solid hsl(27, 66%, 92%);
                     .graph {
                         grid-column-gap: 20px;
+                        div {
+                            width: 57px;
+                            &.day {
+                                width: unset;
+                                font-size: 1rem;
+                                height: unset;
+                            }
+                        }
                     }
                 }
                 .data {

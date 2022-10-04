@@ -23,6 +23,14 @@
   body main .spending .week .graph {
     grid-column-gap: 20px;
   }
+  body main .spending .week .graph div {
+    width: 57px;
+  }
+  body main .spending .week .graph div.day {
+    width: unset;
+    font-size: 1rem;
+    height: unset;
+  }
   body main .spending .data h2 {
     font-size: 2.5rem;
   }
