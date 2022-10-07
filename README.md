@@ -76,5 +76,5 @@ let removeSpend = () => {
 
 ## Author
 
-- Website - [Tomás Alberdi](https://tomyalberdi.github.io/portfolio/)
+- Website - [Tomás Alberdi](https://tomyalberdi.github.io/Portfolio/)
 - Frontend Mentor - [@TomyAlberdi](https://www.frontendmentor.io/profile/TomyAlberdi)
